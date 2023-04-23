@@ -17,7 +17,7 @@ struct ContentView: View {
                         .font(.title)
                         .foregroundColor(.white)
                         .padding(.top, 50.0)
-                    ScrollView() {
+                    ScrollView(showsIndicators: false) {
                         ForEach(0 ..< Sounds.sounds.count, id: \.self) { index in
                             ButtonsView(index: index)
                         }
