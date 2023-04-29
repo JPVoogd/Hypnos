@@ -16,11 +16,6 @@
 		904B379529F5598F00044372 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B379429F5598F00044372 /* AudioManager.swift */; };
 		904B379729F559A200044372 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B379629F559A200044372 /* TimerManager.swift */; };
 		904B379929F559C900044372 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B379829F559C900044372 /* Extension.swift */; };
-		904B379C29F559EF00044372 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B379B29F559EF00044372 /* MeditationView.swift */; };
-		904B379E29F559FA00044372 /* FireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B379D29F559FA00044372 /* FireView.swift */; };
-		904B37A029F55A0300044372 /* RainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B379F29F55A0300044372 /* RainView.swift */; };
-		904B37A229F55A0D00044372 /* ThunderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B37A129F55A0D00044372 /* ThunderView.swift */; };
-		904B37A429F55A1700044372 /* BeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B37A329F55A1700044372 /* BeachView.swift */; };
 		904B37A629F55A2400044372 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B37A529F55A2400044372 /* ButtonsView.swift */; };
 		904B37A829F55A3000044372 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B37A729F55A3000044372 /* PlayerView.swift */; };
 		904B37AA29F55B0C00044372 /* Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37A929F55B0C00044372 /* Meditation.mp3 */; };
@@ -41,11 +36,6 @@
 		904B379429F5598F00044372 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		904B379629F559A200044372 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		904B379829F559C900044372 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		904B379B29F559EF00044372 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
-		904B379D29F559FA00044372 /* FireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireView.swift; sourceTree = "<group>"; };
-		904B379F29F55A0300044372 /* RainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainView.swift; sourceTree = "<group>"; };
-		904B37A129F55A0D00044372 /* ThunderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderView.swift; sourceTree = "<group>"; };
-		904B37A329F55A1700044372 /* BeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachView.swift; sourceTree = "<group>"; };
 		904B37A529F55A2400044372 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		904B37A729F55A3000044372 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		904B37A929F55B0C00044372 /* Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Meditation.mp3; sourceTree = "<group>"; };
@@ -113,11 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				904B378429F5592B00044372 /* ContentView.swift */,
-				904B379B29F559EF00044372 /* MeditationView.swift */,
-				904B379D29F559FA00044372 /* FireView.swift */,
-				904B379F29F55A0300044372 /* RainView.swift */,
-				904B37A129F55A0D00044372 /* ThunderView.swift */,
-				904B37A329F55A1700044372 /* BeachView.swift */,
 				904B37A529F55A2400044372 /* ButtonsView.swift */,
 				904B37A729F55A3000044372 /* PlayerView.swift */,
 			);
@@ -211,10 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				904B37A429F55A1700044372 /* BeachView.swift in Sources */,
-				904B379E29F559FA00044372 /* FireView.swift in Sources */,
-				904B379C29F559EF00044372 /* MeditationView.swift in Sources */,
-				904B37A029F55A0300044372 /* RainView.swift in Sources */,
 				904B378529F5592B00044372 /* ContentView.swift in Sources */,
 				904B379129F5595200044372 /* SoundViewModel.swift in Sources */,
 				904B37A629F55A2400044372 /* ButtonsView.swift in Sources */,
@@ -222,7 +203,6 @@
 				904B379729F559A200044372 /* TimerManager.swift in Sources */,
 				904B37A829F55A3000044372 /* PlayerView.swift in Sources */,
 				904B379529F5598F00044372 /* AudioManager.swift in Sources */,
-				904B37A229F55A0D00044372 /* ThunderView.swift in Sources */,
 				904B378329F5592B00044372 /* SleepMusicApp.swift in Sources */,
 				904B379929F559C900044372 /* Extension.swift in Sources */,
 			);

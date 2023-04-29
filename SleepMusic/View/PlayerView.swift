@@ -63,30 +63,30 @@ struct PlayerView: View {
 
                 //MARK: Playback
                 if let player = audioManager.player {
-                    VStack(spacing: 5) {
-                        //MARK: Playback Timeline
-                        Slider(value: $value, in: 0...player.duration) { editing in
-
-                            print("editing", editing)
-                            isEditing = editing
-
-                            if !editing {
-                                player.currentTime = value
-                            }
-                        }
-                        .accentColor(.white)
-
-                        //MARK: Playback Time
-                        HStack {
-                            Text(DateComponentsFormatter.positional.string(from: player.currentTime) ?? "0:00")
-
-                            Spacer()
-
-                            Text(DateComponentsFormatter.positional.string(from: player.duration - player.currentTime) ?? "0:00")
-                        }
-                        .font(.caption)
-                        .foregroundColor(.white)
-                    }
+//                    VStack(spacing: 5) {
+//                        //MARK: Playback Timeline
+//                        Slider(value: $value, in: 0...player.duration) { editing in
+//
+//                            print("editing", editing)
+//                            isEditing = editing
+//
+//                            if !editing {
+//                                player.currentTime = value
+//                            }
+//                        }
+//                        .accentColor(.white)
+//
+//                        //MARK: Playback Time
+//                        HStack {
+//                            Text(DateComponentsFormatter.positional.string(from: player.currentTime) ?? "0:00")
+//
+//                            Spacer()
+//
+//                            Text(DateComponentsFormatter.positional.string(from: player.duration - player.currentTime) ?? "0:00")
+//                        }
+//                        .font(.caption)
+//                        .foregroundColor(.white)
+//                    }
 
                     //MARK: CountdownTimer
                     HStack {
@@ -109,11 +109,11 @@ struct PlayerView: View {
                         Spacer()
 
                         //MARK: Backward Button
-                        PlaybackControlButton(systemName: "gobackward.10") {
-                            player.currentTime -= 10
-                        }
+//                        PlaybackControlButton(systemName: "gobackward.10") {
+//                            player.currentTime -= 10
+//                        }
 
-                        Spacer()
+//                        Spacer()
 
                         //MARK: Play/Pause Button
                         PlaybackControlButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 44) {
@@ -123,11 +123,11 @@ struct PlayerView: View {
                         Spacer()
 
                         //MARK: Forward Button
-                        PlaybackControlButton(systemName: "goforward.10") {
-                            player.currentTime += 10
-                        }
+//                        PlaybackControlButton(systemName: "goforward.10") {
+//                            player.currentTime += 10
+//                        }
 
-                        Spacer()
+//                        Spacer()
 
                         //MARK: Stop Button
                             PlaybackControlButton(systemName: "timer") {
@@ -150,6 +150,7 @@ struct PlayerView: View {
                                 } message: {
                                     Text("Select your time")
                                 }
+
                     }
                 }
             }

@@ -13,16 +13,15 @@ struct Sounds {
     let track: String
     let smallImage:String
     let largeImage: String
-    let view: Int
-    }
+}
 
 extension Sounds {
     static let sounds = [
-        Sounds(title: "Meditation Sounds", track: "Meditation", smallImage: "Meditation", largeImage: "Meditation", view: 0),
-        Sounds(title: "Campfire Sounds", track: "Fire", smallImage: "CampfireSmall", largeImage: "CampfireLarge", view: 1),
-        Sounds(title: "Raining Sounds", track: "Rain", smallImage: "Rain", largeImage: "Rain", view: 2),
-        Sounds(title: "Thunder Sounds", track: "Thunder", smallImage: "ThunderSmall", largeImage: "ThunderLarge", view: 3),
-        Sounds(title: "Beach Sounds", track: "Beach", smallImage: "BeachSmall", largeImage: "BeachLarge", view: 4)
+        Sounds(title: "Meditation Sounds", track: "Meditation", smallImage: "Meditation", largeImage: "Meditation"),
+        Sounds(title: "Campfire Sounds", track: "Fire", smallImage: "CampfireSmall", largeImage: "CampfireLarge"),
+        Sounds(title: "Raining Sounds", track: "Rain", smallImage: "Rain", largeImage: "Rain"),
+        Sounds(title: "Thunder Sounds", track: "Thunder", smallImage: "ThunderSmall", largeImage: "ThunderLarge"),
+        Sounds(title: "Beach Sounds", track: "Beach", smallImage: "BeachSmall", largeImage: "BeachLarge")
     ]
 }
 

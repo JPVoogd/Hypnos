@@ -7,9 +7,9 @@
 
 import Foundation
 import AVKit
-
 final class AudioManager: ObservableObject {
     static let shared = AudioManager()
+    let timer = Timer.publish(every: 1, on: .main, in: .common)
 
     var player: AVAudioPlayer?
     @Published private(set) var isPlaying: Bool = false {
@@ -62,6 +62,7 @@ final class AudioManager: ObservableObject {
         guard let player = player else { return }
 
         if player.isPlaying {
+            player.setVolume(0, fadeDuration: 10)
             player.stop()
             isPlaying = false
         }
