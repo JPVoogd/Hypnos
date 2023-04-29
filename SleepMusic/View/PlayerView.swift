@@ -11,14 +11,8 @@ struct PlayerView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var audioManager: AudioManager
     @StateObject private var timerModel = TimerModel()
-
-    @State private var value: Double = 0.0
-    @State private var isEditing: Bool = false
     @State private var showDetails = false
     let index: Int
-    let sliderTimer = Timer
-        .publish(every: 0.5, on: .main, in: .common)
-        .autoconnect()
 
      let countdownTimer = Timer
         .publish(every: 1, on: .main, in: .common)
@@ -61,59 +55,23 @@ struct PlayerView: View {
 
                 Spacer()
 
-                //MARK: Playback
-                if let player = audioManager.player {
-//                    VStack(spacing: 5) {
-//                        //MARK: Playback Timeline
-//                        Slider(value: $value, in: 0...player.duration) { editing in
-//
-//                            print("editing", editing)
-//                            isEditing = editing
-//
-//                            if !editing {
-//                                player.currentTime = value
-//                            }
-//                        }
-//                        .accentColor(.white)
-//
-//                        //MARK: Playback Time
-//                        HStack {
-//                            Text(DateComponentsFormatter.positional.string(from: player.currentTime) ?? "0:00")
-//
-//                            Spacer()
-//
-//                            Text(DateComponentsFormatter.positional.string(from: player.duration - player.currentTime) ?? "0:00")
-//                        }
-//                        .font(.caption)
-//                        .foregroundColor(.white)
-//                    }
-
                     //MARK: CountdownTimer
                     HStack {
                         if timerModel.isActive == true {
                             Text("\(timerModel.time)")
                                 .font(.body)
                                 .foregroundColor(.white)
-                        } else {
-                            Text("")
                         }
                     }
 
                     HStack {
                         //MARK: Repeat Button
-                        let color: Color = audioManager.isLooping ? .teal : .white
-                        PlaybackControlButton(systemName: "repeat", color: color) {
+                        let loopingColor: Color = audioManager.isLooping ? .teal : .white
+                        PlaybackControlButton(systemName: "repeat", color: loopingColor) {
                             audioManager.toggleLoop()
                         }
 
                         Spacer()
-
-                        //MARK: Backward Button
-//                        PlaybackControlButton(systemName: "gobackward.10") {
-//                            player.currentTime -= 10
-//                        }
-
-//                        Spacer()
 
                         //MARK: Play/Pause Button
                         PlaybackControlButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 44) {
@@ -122,15 +80,9 @@ struct PlayerView: View {
 
                         Spacer()
 
-                        //MARK: Forward Button
-//                        PlaybackControlButton(systemName: "goforward.10") {
-//                            player.currentTime += 10
-//                        }
-
-//                        Spacer()
-
                         //MARK: Stop Button
-                            PlaybackControlButton(systemName: "timer") {
+                        let timerColor: Color = timerModel.isActive ? .teal : .white
+                            PlaybackControlButton(systemName: "timer", color: timerColor) {
                                 showDetails.toggle()
                             }
                                 .confirmationDialog("Select time", isPresented: $showDetails) {
@@ -152,21 +104,16 @@ struct PlayerView: View {
                                 }
 
                     }
-                }
             }
             .padding(20)
         }
         .onAppear{
             audioManager.startPlayer(track: Sounds.sounds[index].track)
         }
-        .onReceive(sliderTimer) { _ in
-            guard let player = audioManager.player, !isEditing else { return }
-            value = player.currentTime
-        }
         .onReceive(countdownTimer) { _ in
             let stop = timerModel.updateCountdown()
             if stop {
-                audioManager.stop()
+                audioManager.fadeOut()
                 dismiss()
             }
         }
