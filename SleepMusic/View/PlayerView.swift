@@ -14,7 +14,7 @@ struct PlayerView: View {
     @State private var showDetails = false
     let index: Int
 
-     let countdownTimer = Timer
+    let countdownTimer = Timer
         .publish(every: 1, on: .main, in: .common)
         .autoconnect()
 
@@ -37,78 +37,78 @@ struct PlayerView: View {
 
                 //MARK: Dismiss Button
                 HStack {
+                    //MARK: Title
+                    Text(Sounds.sounds[index].title)
+                        .font(.title)
+                        .foregroundColor(.white)
+                    Spacer()
                     Button {
                         audioManager.stop()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
-                            .font(.system(size: 36))
+                            .font(.system(size: 30))
                             .foregroundColor(.white)
                     }
-                    Spacer()
                 }
-
-                //MARK: Title
-                Text(Sounds.sounds[index].title)
-                    .font(.title)
-                    .foregroundColor(.white)
 
                 Spacer()
 
-                    //MARK: CountdownTimer
-                    HStack {
-                        if timerModel.isActive == true {
-                            Text("\(timerModel.time)")
-                                .font(.body)
-                                .foregroundColor(.white)
-                        }
+                //MARK: CountdownTimer
+                HStack {
+                    if timerModel.isActive {
+                        Text("\(timerModel.time)")
+                            .font(.title3)
+                            .foregroundColor(.white)
+                    }
+                }
+
+                HStack {
+                    //MARK: Repeat Button
+                    let loopingColor: Color = audioManager.isLooping ? .teal : .white
+                    PlaybackControlButton(systemName: "repeat", color: loopingColor) {
+                        audioManager.toggleLoop()
                     }
 
-                    HStack {
-                        //MARK: Repeat Button
-                        let loopingColor: Color = audioManager.isLooping ? .teal : .white
-                        PlaybackControlButton(systemName: "repeat", color: loopingColor) {
-                            audioManager.toggleLoop()
-                        }
+                    Spacer()
 
-                        Spacer()
-
-                        //MARK: Play/Pause Button
-                        PlaybackControlButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 44) {
-                            audioManager.playPause()
-                        }
-
-                        Spacer()
-
-                        //MARK: Stop Button
-                        let timerColor: Color = timerModel.isActive ? .teal : .white
-                            PlaybackControlButton(systemName: "timer", color: timerColor) {
-                                showDetails.toggle()
-                            }
-                                .confirmationDialog("Select time", isPresented: $showDetails) {
-                                    Button("1:00") {
-                                        timerModel.minutes = 1
-                                        timerModel.start(minutes: timerModel.minutes) }
-                                    Button("15:00") {
-                                        timerModel.minutes = 15
-                                        timerModel.start(minutes: timerModel.minutes) }
-                                    Button("30:00") {
-                                        timerModel.minutes = 30
-                                        timerModel.start(minutes: timerModel.minutes) }
-                                    Button("45:00") {
-                                        timerModel.minutes = 45
-                                        timerModel.start(minutes: timerModel.minutes) }
-                                    Button("Cancel", role: .cancel) { }
-                                } message: {
-                                    Text("Select your time")
-                                }
-
+                    //MARK: Play/Pause Button
+                    PlaybackControlButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 44) {
+                        audioManager.playPause()
                     }
+
+                    Spacer()
+
+                    //MARK: Timer Button
+                    let timerColor: Color = timerModel.isActive ? .teal : .white
+                    PlaybackControlButton(systemName: "timer", fontSize: 30, color: timerColor) {
+                        showDetails.toggle()
+                    }
+                    .confirmationDialog("Select time", isPresented: $showDetails) {
+                        Button("15:00") {
+                            timerModel.minutes = 15
+                            timerModel.start(minutes: timerModel.minutes) }
+                        Button("30:00") {
+                            timerModel.minutes = 30
+                            timerModel.start(minutes: timerModel.minutes) }
+                        Button("45:00") {
+                            timerModel.minutes = 45
+                            timerModel.start(minutes: timerModel.minutes) }
+                        Button("60:00") {
+                            timerModel.minutes = 60
+                            timerModel.start(minutes: timerModel.minutes) }
+                        Button("Cancel", role: .cancel) { }
+                    } message: {
+                        Text("Select your time")
+                    }
+                }
             }
             .padding(20)
         }
         .onAppear{
             audioManager.startPlayer(track: Sounds.sounds[index].track)
+            audioManager.player?.numberOfLoops = 0
+            audioManager.isLooping = false
         }
         .onReceive(countdownTimer) { _ in
             let stop = timerModel.updateCountdown()

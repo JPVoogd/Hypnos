@@ -13,7 +13,7 @@ struct ContentView: View {
             ZStack {
                 Color(red: 24/255, green: 23/255, blue: 22/255)
                 VStack {
-                    Text("Meditation Sleep")
+                    Text("Tranquil")
                         .font(.title)
                         .foregroundColor(.white)
                         .padding(.top, 50.0)

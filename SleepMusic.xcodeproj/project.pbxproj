@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90011E0C2A0C0AA600BABE6B /* Underwater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90011E0B2A0C0AA600BABE6B /* Underwater.mp3 */; };
 		904B378329F5592B00044372 /* SleepMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B378229F5592B00044372 /* SleepMusicApp.swift */; };
 		904B378529F5592B00044372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B378429F5592B00044372 /* ContentView.swift */; };
 		904B378729F5592D00044372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904B378629F5592D00044372 /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 		904B37AA29F55B0C00044372 /* Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37A929F55B0C00044372 /* Meditation.mp3 */; };
 		904B37B129F55B3400044372 /* Thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37B029F55B3400044372 /* Thunder.mp3 */; };
 		904B37B329F55B4200044372 /* Beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37B229F55B4200044372 /* Beach.mp3 */; };
+		906847F42A0BDDC10005ECDC /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906847F32A0BDDC10005ECDC /* TestView.swift */; };
+		906847F62A0BE06C0005ECDC /* NatureButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906847F52A0BE06B0005ECDC /* NatureButtonView.swift */; };
 		90D4E02C29FD08D90072F00E /* Short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E02B29FD08D90072F00E /* Short.mp3 */; };
 		90D4E03029FD14EC0072F00E /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E02F29FD14EC0072F00E /* Rain.mp3 */; };
 		90D4E03429FD15D40072F00E /* Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E03329FD15D40072F00E /* Fire.mp3 */; };
@@ -28,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90011E0B2A0C0AA600BABE6B /* Underwater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Underwater.mp3; sourceTree = "<group>"; };
 		904B377F29F5592B00044372 /* SleepMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904B378229F5592B00044372 /* SleepMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMusicApp.swift; sourceTree = "<group>"; };
 		904B378429F5592B00044372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 		904B37B029F55B3400044372 /* Thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Thunder.mp3; sourceTree = "<group>"; };
 		904B37B229F55B4200044372 /* Beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beach.mp3; sourceTree = "<group>"; };
 		904B37B429F55BEB00044372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		906847F32A0BDDC10005ECDC /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		906847F52A0BE06B0005ECDC /* NatureButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureButtonView.swift; sourceTree = "<group>"; };
 		90D4E02B29FD08D90072F00E /* Short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Short.mp3; sourceTree = "<group>"; };
 		90D4E02F29FD14EC0072F00E /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain.mp3; sourceTree = "<group>"; };
 		90D4E03329FD15D40072F00E /* Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire.mp3; sourceTree = "<group>"; };
@@ -105,7 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				904B378429F5592B00044372 /* ContentView.swift */,
+				906847F32A0BDDC10005ECDC /* TestView.swift */,
 				904B37A529F55A2400044372 /* ButtonsView.swift */,
+				906847F52A0BE06B0005ECDC /* NatureButtonView.swift */,
 				904B37A729F55A3000044372 /* PlayerView.swift */,
 				904B379229F5596C00044372 /* PlaybackControlButton.swift */,
 			);
@@ -122,6 +130,7 @@
 				904B37B229F55B4200044372 /* Beach.mp3 */,
 				90D4E03529FD16890072F00E /* WindChimes.mp3 */,
 				90D4E03729FD17940072F00E /* ZenGong.mp3 */,
+				90011E0B2A0C0AA600BABE6B /* Underwater.mp3 */,
 				90D4E02B29FD08D90072F00E /* Short.mp3 */,
 			);
 			path = Sounds;
@@ -188,6 +197,7 @@
 				904B37B129F55B3400044372 /* Thunder.mp3 in Resources */,
 				904B378A29F5592D00044372 /* Preview Assets.xcassets in Resources */,
 				90D4E03029FD14EC0072F00E /* Rain.mp3 in Resources */,
+				90011E0C2A0C0AA600BABE6B /* Underwater.mp3 in Resources */,
 				904B37B329F55B4200044372 /* Beach.mp3 in Resources */,
 				904B378729F5592D00044372 /* Assets.xcassets in Resources */,
 				904B37AA29F55B0C00044372 /* Meditation.mp3 in Resources */,
@@ -211,8 +221,10 @@
 				904B379329F5596C00044372 /* PlaybackControlButton.swift in Sources */,
 				904B379729F559A200044372 /* TimerManager.swift in Sources */,
 				904B37A829F55A3000044372 /* PlayerView.swift in Sources */,
+				906847F42A0BDDC10005ECDC /* TestView.swift in Sources */,
 				904B379529F5598F00044372 /* AudioManager.swift in Sources */,
 				904B378329F5592B00044372 /* SleepMusicApp.swift in Sources */,
+				906847F62A0BE06C0005ECDC /* NatureButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,20 +13,31 @@ struct ButtonsView: View {
     
     var body: some View {
         //MARK: Thunder button
-        Button {
-            showPlayer = true
-        } label: {
-            Label("", systemImage: "play.fill")
-                .font(.largeTitle)
+        ZStack {
+            Button {
+                showPlayer = true
+            } label: {
+                Label("", systemImage: "play.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding(.vertical, 10)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: UIScreen.main.bounds.height / 4)
+                    .background(Image(Sounds.sounds[index].smallImage)
+                        .resizable()
+                        .scaledToFill())
+                    .cornerRadius(20)
+            }
+            Text(Sounds.sounds[index].title)
+                .frame(
+                    maxWidth: 320,
+                    maxHeight: 195,
+                    alignment: .topLeading)
+                .font(.title)
                 .foregroundColor(.white)
-                .padding(.vertical, 10)
-                .frame(maxWidth: .infinity)
-                .frame(height: UIScreen.main.bounds.height / 4)
-                .background(Image(Sounds.sounds[index].smallImage)
-                    .resizable()
-                    .scaledToFill())
-                .cornerRadius(20)
         }
+
+
         .fullScreenCover(isPresented: $showPlayer) {
             PlayerView(index: index)
         }
