@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90011E0C2A0C0AA600BABE6B /* Underwater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90011E0B2A0C0AA600BABE6B /* Underwater.mp3 */; };
+		90011E2A2A0D36A900BABE6B /* AirplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90011E292A0D36A900BABE6B /* AirplayView.swift */; };
 		904B378329F5592B00044372 /* SleepMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B378229F5592B00044372 /* SleepMusicApp.swift */; };
 		904B378529F5592B00044372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B378429F5592B00044372 /* ContentView.swift */; };
 		904B378729F5592D00044372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904B378629F5592D00044372 /* Assets.xcassets */; };
@@ -23,6 +24,16 @@
 		904B37B329F55B4200044372 /* Beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37B229F55B4200044372 /* Beach.mp3 */; };
 		906847F42A0BDDC10005ECDC /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906847F32A0BDDC10005ECDC /* TestView.swift */; };
 		906847F62A0BE06C0005ECDC /* NatureButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906847F52A0BE06B0005ECDC /* NatureButtonView.swift */; };
+		90B9A1652A0D6C4A00CF5350 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1642A0D6C4A00CF5350 /* SettingsView.swift */; };
+		90B9A1672A0D768700CF5350 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1662A0D768700CF5350 /* AboutView.swift */; };
+		90B9A1692A0E853900CF5350 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1682A0E853900CF5350 /* ThemeView.swift */; };
+		90B9A16B2A0E87F600CF5350 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A16A2A0E87F600CF5350 /* AnalyticsView.swift */; };
+		90B9A16D2A0E880900CF5350 /* ExperimentalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A16C2A0E880900CF5350 /* ExperimentalView.swift */; };
+		90B9A16F2A0E8FB300CF5350 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A16E2A0E8FB300CF5350 /* ContactView.swift */; };
+		90B9A1712A0E8FC800CF5350 /* AppRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1702A0E8FC800CF5350 /* AppRateView.swift */; };
+		90B9A1732A0E8FDA00CF5350 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1722A0E8FDA00CF5350 /* AppIconView.swift */; };
+		90B9A1752A0E8FF800CF5350 /* Shareview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1742A0E8FF800CF5350 /* Shareview.swift */; };
+		90B9A1772A0E900600CF5350 /* Privacyview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1762A0E900600CF5350 /* Privacyview.swift */; };
 		90D4E02C29FD08D90072F00E /* Short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E02B29FD08D90072F00E /* Short.mp3 */; };
 		90D4E03029FD14EC0072F00E /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E02F29FD14EC0072F00E /* Rain.mp3 */; };
 		90D4E03429FD15D40072F00E /* Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E03329FD15D40072F00E /* Fire.mp3 */; };
@@ -32,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		90011E0B2A0C0AA600BABE6B /* Underwater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Underwater.mp3; sourceTree = "<group>"; };
+		90011E292A0D36A900BABE6B /* AirplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayView.swift; sourceTree = "<group>"; };
 		904B377F29F5592B00044372 /* SleepMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904B378229F5592B00044372 /* SleepMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMusicApp.swift; sourceTree = "<group>"; };
 		904B378429F5592B00044372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +61,16 @@
 		904B37B429F55BEB00044372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		906847F32A0BDDC10005ECDC /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		906847F52A0BE06B0005ECDC /* NatureButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureButtonView.swift; sourceTree = "<group>"; };
+		90B9A1642A0D6C4A00CF5350 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		90B9A1662A0D768700CF5350 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		90B9A1682A0E853900CF5350 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		90B9A16A2A0E87F600CF5350 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		90B9A16C2A0E880900CF5350 /* ExperimentalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentalView.swift; sourceTree = "<group>"; };
+		90B9A16E2A0E8FB300CF5350 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		90B9A1702A0E8FC800CF5350 /* AppRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRateView.swift; sourceTree = "<group>"; };
+		90B9A1722A0E8FDA00CF5350 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
+		90B9A1742A0E8FF800CF5350 /* Shareview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shareview.swift; sourceTree = "<group>"; };
+		90B9A1762A0E900600CF5350 /* Privacyview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacyview.swift; sourceTree = "<group>"; };
 		90D4E02B29FD08D90072F00E /* Short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Short.mp3; sourceTree = "<group>"; };
 		90D4E02F29FD14EC0072F00E /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain.mp3; sourceTree = "<group>"; };
 		90D4E03329FD15D40072F00E /* Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire.mp3; sourceTree = "<group>"; };
@@ -116,6 +138,17 @@
 				906847F52A0BE06B0005ECDC /* NatureButtonView.swift */,
 				904B37A729F55A3000044372 /* PlayerView.swift */,
 				904B379229F5596C00044372 /* PlaybackControlButton.swift */,
+				90011E292A0D36A900BABE6B /* AirplayView.swift */,
+				90B9A1642A0D6C4A00CF5350 /* SettingsView.swift */,
+				90B9A1682A0E853900CF5350 /* ThemeView.swift */,
+				90B9A1722A0E8FDA00CF5350 /* AppIconView.swift */,
+				90B9A16A2A0E87F600CF5350 /* AnalyticsView.swift */,
+				90B9A16C2A0E880900CF5350 /* ExperimentalView.swift */,
+				90B9A16E2A0E8FB300CF5350 /* ContactView.swift */,
+				90B9A1702A0E8FC800CF5350 /* AppRateView.swift */,
+				90B9A1742A0E8FF800CF5350 /* Shareview.swift */,
+				90B9A1762A0E900600CF5350 /* Privacyview.swift */,
+				90B9A1662A0D768700CF5350 /* AboutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,16 +248,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B9A1712A0E8FC800CF5350 /* AppRateView.swift in Sources */,
 				904B378529F5592B00044372 /* ContentView.swift in Sources */,
 				904B379129F5595200044372 /* SoundViewModel.swift in Sources */,
 				904B37A629F55A2400044372 /* ButtonsView.swift in Sources */,
+				90B9A16B2A0E87F600CF5350 /* AnalyticsView.swift in Sources */,
 				904B379329F5596C00044372 /* PlaybackControlButton.swift in Sources */,
+				90B9A1672A0D768700CF5350 /* AboutView.swift in Sources */,
+				90B9A1732A0E8FDA00CF5350 /* AppIconView.swift in Sources */,
 				904B379729F559A200044372 /* TimerManager.swift in Sources */,
 				904B37A829F55A3000044372 /* PlayerView.swift in Sources */,
 				906847F42A0BDDC10005ECDC /* TestView.swift in Sources */,
+				90B9A1692A0E853900CF5350 /* ThemeView.swift in Sources */,
+				90B9A1752A0E8FF800CF5350 /* Shareview.swift in Sources */,
+				90B9A16F2A0E8FB300CF5350 /* ContactView.swift in Sources */,
+				90B9A16D2A0E880900CF5350 /* ExperimentalView.swift in Sources */,
 				904B379529F5598F00044372 /* AudioManager.swift in Sources */,
 				904B378329F5592B00044372 /* SleepMusicApp.swift in Sources */,
+				90B9A1772A0E900600CF5350 /* Privacyview.swift in Sources */,
+				90B9A1652A0D6C4A00CF5350 /* SettingsView.swift in Sources */,
 				906847F62A0BE06C0005ECDC /* NatureButtonView.swift in Sources */,
+				90011E2A2A0D36A900BABE6B /* AirplayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Theme;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepMusic/Preview Content\"";
@@ -357,7 +401,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepMusic/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Relaxing Sleep";
+				INFOPLIST_KEY_CFBundleDisplayName = Tranquil;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -383,7 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Theme;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepMusic/Preview Content\"";
@@ -391,7 +435,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepMusic/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Relaxing Sleep";
+				INFOPLIST_KEY_CFBundleDisplayName = Tranquil;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

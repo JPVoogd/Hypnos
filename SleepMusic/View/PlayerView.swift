@@ -29,8 +29,8 @@ struct PlayerView: View {
 
             //MARK: Blur View
             Rectangle()
-                .background(.thinMaterial)
-                .opacity(0.5)
+                .background(.regularMaterial)
+                .opacity(0.6)
                 .ignoresSafeArea()
 
             VStack(spacing: 32) {
@@ -64,11 +64,9 @@ struct PlayerView: View {
                 }
 
                 HStack {
-                    //MARK: Repeat Button
-                    let loopingColor: Color = audioManager.isLooping ? .teal : .white
-                    PlaybackControlButton(systemName: "repeat", color: loopingColor) {
-                        audioManager.toggleLoop()
-                    }
+                    //MARK: Airplay Button
+                    AirPlayView()
+                        .frame(width: 50, height: 50)
 
                     Spacer()
 
@@ -80,10 +78,11 @@ struct PlayerView: View {
                     Spacer()
 
                     //MARK: Timer Button
-                    let timerColor: Color = timerModel.isActive ? .teal : .white
-                    PlaybackControlButton(systemName: "timer", fontSize: 30, color: timerColor) {
+                    let timerColor: Color = timerModel.isActive ? .purple : .white
+                    PlaybackControlButton(systemName: "timer", color: timerColor) {
                         showDetails.toggle()
                     }
+                    .frame(width: 50, height: 50)
                     .confirmationDialog("Select time", isPresented: $showDetails) {
                         Button("15:00") {
                             timerModel.minutes = 15
@@ -107,8 +106,8 @@ struct PlayerView: View {
         }
         .onAppear{
             audioManager.startPlayer(track: Sounds.sounds[index].track)
-            audioManager.player?.numberOfLoops = 0
-            audioManager.isLooping = false
+            audioManager.player?.numberOfLoops = -1
+            audioManager.isLooping = true
         }
         .onReceive(countdownTimer) { _ in
             let stop = timerModel.updateCountdown()

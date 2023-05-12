@@ -15,7 +15,7 @@ struct TestView: View {
         coloredAppearance.configureWithTransparentBackground()
         //set background color
         coloredAppearance.backgroundColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1)
-        coloredAppearance.shadowColor = UIColor.gray
+        coloredAppearance.shadowColor = UIColor.purple
         //set title color
         coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
@@ -41,7 +41,6 @@ struct TestView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal, 20)
                         .padding(.top, 20)
-                        .padding(.bottom, -5)
                     ForEach(0 ..< Sounds.sounds.count, id: \.self) { index in
                         ButtonsView(index: index)
                             .padding(.horizontal, 20)
@@ -52,7 +51,6 @@ struct TestView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal, 20)
                         .padding(.top, 20)
-                        .padding(.bottom, -5)
                     ForEach(0 ..< Sounds.meditation.count, id: \.self) { index in
                         NatureButtonView(index: index)
                             .padding(.horizontal, 20)
@@ -65,6 +63,7 @@ struct TestView: View {
             .toolbar {
                 Button(action: {}) {
                     Text(Image(systemName: "gearshape"))
+                        .foregroundColor(.purple)
                 }
             }
         }
