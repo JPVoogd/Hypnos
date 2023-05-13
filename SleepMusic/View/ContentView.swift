@@ -36,13 +36,6 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 ScrollView(showsIndicators: false) {
-                    Text("Meditation Sounds")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, 20)
-                        .padding(.top, 20)
-                        .padding(.bottom, -5)
                     ForEach(0 ..< Sounds.sounds.count, id: \.self) { index in
                         ButtonsView(index: index)
                             .padding(.horizontal, 20)

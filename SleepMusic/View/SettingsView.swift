@@ -33,22 +33,22 @@ struct SettingsView: View {
                     }
                     Section {
                         NavigationLink(destination: ContactView()) {
-                            Label("Support Guide", systemImage: "bookmark")
+                            Label("Support Guide", systemImage: "questionmark.bubble.fill")
                         }
                         NavigationLink(destination: ContactView()) {
-                            Label("Contact", systemImage: "testtube.2")
+                            Label("Contact", systemImage: "bubble.left.fill")
                         }
                         NavigationLink(destination: AppRateView()) {
-                            Label("Rate in App Store", systemImage: "bookmark")
+                            Label("Rate in App Store", systemImage: "star.bubble.fill")
                         }
                         NavigationLink(destination: Shareview()) {
-                            Label("Share Tranquil", systemImage: "testtube.2")
+                            Label("Share Tranquil", systemImage: "square.and.arrow.up")
                         }
                         NavigationLink(destination: Privacyview()) {
-                            Label("Privacy Policy", systemImage: "testtube.2")
+                            Label("Privacy Policy", systemImage: "doc.plaintext.fill")
                         }
                         NavigationLink(destination: AboutView()) {
-                            Label("About", systemImage: "testtube.2")
+                            Label("About", systemImage: "person.crop.circle")
                         }
                     } header: {
                         Text("Support")

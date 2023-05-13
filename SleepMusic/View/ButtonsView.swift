@@ -17,7 +17,17 @@ struct ButtonsView: View {
             Button {
                 showPlayer = true
             } label: {
-                Label("", systemImage: "play.fill")
+//                Label(Sounds.sounds[index].title, systemImage: "play.fill")
+//                    .font(.largeTitle)
+//                    .foregroundColor(.white)
+//                    .padding(.vertical, 10)
+//                    .frame(maxWidth: .infinity)
+//                    .frame(height: UIScreen.main.bounds.height / 4)
+//                    .background(Image(Sounds.sounds[index].smallImage)
+//                        .resizable()
+//                        .scaledToFill())
+//                    .cornerRadius(20)
+                Text(Sounds.sounds[index].title)
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .padding(.vertical, 10)
@@ -28,13 +38,13 @@ struct ButtonsView: View {
                         .scaledToFill())
                     .cornerRadius(20)
             }
-            Text(Sounds.sounds[index].title)
-                .frame(
-                    maxWidth: 320,
-                    maxHeight: 195,
-                    alignment: .topLeading)
-                .font(.title)
-                .foregroundColor(.white)
+//            Text(Sounds.sounds[index].title)
+//                .frame(
+//                    maxWidth: 320,
+//                    maxHeight: 195,
+//                    alignment: .topLeading)
+//                .font(.title)
+//                .foregroundColor(.white)
         }
 
 
