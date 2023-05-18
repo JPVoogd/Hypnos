@@ -12,42 +12,32 @@ struct ButtonsView: View {
     @State private var showPlayer = false
     
     var body: some View {
-        //MARK: Thunder button
-        ZStack {
+ 
             Button {
                 showPlayer = true
             } label: {
-//                Label(Sounds.sounds[index].title, systemImage: "play.fill")
-//                    .font(.largeTitle)
+                Image(Sounds.sounds[index].smallImage)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity)
+                    .frame(height: UIScreen.main.bounds.height / 4)
+                    .cornerRadius(20)
+                    .overlay(
+                        Text(Sounds.sounds[index].title)
+                            .font(Font.custom("MedievalSharp", size: 50))
+                            .foregroundColor(.white)
+                            .shadow(color: .black, radius: 10)
+                    )
+//                Text(Sounds.sounds[index].title)
+//                    .font(Font.custom("MedievalSharp-Regular", size: 50))
 //                    .foregroundColor(.white)
-//                    .padding(.vertical, 10)
 //                    .frame(maxWidth: .infinity)
 //                    .frame(height: UIScreen.main.bounds.height / 4)
 //                    .background(Image(Sounds.sounds[index].smallImage)
 //                        .resizable()
 //                        .scaledToFill())
 //                    .cornerRadius(20)
-                Text(Sounds.sounds[index].title)
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding(.vertical, 10)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: UIScreen.main.bounds.height / 4)
-                    .background(Image(Sounds.sounds[index].smallImage)
-                        .resizable()
-                        .scaledToFill())
-                    .cornerRadius(20)
             }
-//            Text(Sounds.sounds[index].title)
-//                .frame(
-//                    maxWidth: 320,
-//                    maxHeight: 195,
-//                    alignment: .topLeading)
-//                .font(.title)
-//                .foregroundColor(.white)
-        }
-
-
         .fullScreenCover(isPresented: $showPlayer) {
             PlayerView(index: index)
         }

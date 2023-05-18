@@ -9,28 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showingSettings = false
-    init(){
-        //set nav bar style
-        let coloredAppearance = UINavigationBarAppearance()
-
-        coloredAppearance.configureWithTransparentBackground()
-        //set background color
-        coloredAppearance.backgroundColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1)
-        coloredAppearance.shadowColor = UIColor.purple
-        //set title color
-        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-
-        //make the appearance work
-        UINavigationBar.appearance().standardAppearance = coloredAppearance
-        UINavigationBar.appearance().compactAppearance = coloredAppearance
-        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
-        UINavigationBar.appearance().tintColor = UIColor.white
-
-        //set backbutton and its color
-        let image = UIImage(systemName: "chevron.backward")?.withTintColor(UIColor.white, renderingMode: .alwaysOriginal)
-        coloredAppearance.setBackIndicatorImage(image, transitionMaskImage: image)
-    }
+    @EnvironmentObject var dataSource: DataSource
 
     var body: some View {
         NavigationStack {
@@ -38,8 +17,8 @@ struct ContentView: View {
                 ScrollView(showsIndicators: false) {
                     ForEach(0 ..< Sounds.sounds.count, id: \.self) { index in
                         ButtonsView(index: index)
-                            .padding(.horizontal, 20)
                     }
+                    .padding(20)
                 }
             }
             .navigationTitle("Tranquil")
@@ -51,6 +30,7 @@ struct ContentView: View {
                         showingSettings = true
                     }) {
                         Text(Image(systemName: "gearshape"))
+                            .accentColor(dataSource.selectedTheme.accentColor)
                     }
                     .sheet(isPresented: $showingSettings) {
                         NavigationView {
@@ -66,6 +46,7 @@ struct ContentView: View {
                                 }
                                 .navigationTitle("Settings")
                         }
+                        .accentColor(dataSource.selectedTheme.accentColor)
                     }
                 }
             }
@@ -77,5 +58,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(AudioManager())
+            .environmentObject(DataSource())
     }
 }

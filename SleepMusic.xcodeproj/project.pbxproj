@@ -22,6 +22,8 @@
 		904B37AA29F55B0C00044372 /* Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37A929F55B0C00044372 /* Meditation.mp3 */; };
 		904B37B129F55B3400044372 /* Thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37B029F55B3400044372 /* Thunder.mp3 */; };
 		904B37B329F55B4200044372 /* Beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 904B37B229F55B4200044372 /* Beach.mp3 */; };
+		905D25012A13ED5500CE72B5 /* MedievalSharp-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 905D25002A13ED5500CE72B5 /* MedievalSharp-Regular.ttf */; };
+		905D25032A13F03C00CE72B5 /* Parchment.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 905D25022A13F03C00CE72B5 /* Parchment.ttf */; };
 		906847F42A0BDDC10005ECDC /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906847F32A0BDDC10005ECDC /* TestView.swift */; };
 		906847F62A0BE06C0005ECDC /* NatureButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906847F52A0BE06B0005ECDC /* NatureButtonView.swift */; };
 		90B9A1652A0D6C4A00CF5350 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1642A0D6C4A00CF5350 /* SettingsView.swift */; };
@@ -34,11 +36,20 @@
 		90B9A1732A0E8FDA00CF5350 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1722A0E8FDA00CF5350 /* AppIconView.swift */; };
 		90B9A1752A0E8FF800CF5350 /* Shareview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1742A0E8FF800CF5350 /* Shareview.swift */; };
 		90B9A1772A0E900600CF5350 /* Privacyview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A1762A0E900600CF5350 /* Privacyview.swift */; };
+		90B9A1792A0FC76F00CF5350 /* Keyboard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B9A1782A0FC76F00CF5350 /* Keyboard.mp3 */; };
+		90B9A17B2A0FC77D00CF5350 /* Typewriter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B9A17A2A0FC77D00CF5350 /* Typewriter.mp3 */; };
+		90D4C04D2A10F8800050B6FD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4C04C2A10F8800050B6FD /* Theme.swift */; };
+		90D4C0502A10F89C0050B6FD /* ThemeColours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D4C04F2A10F89C0050B6FD /* ThemeColours.xcassets */; };
+		90D4C0522A10F8B00050B6FD /* ThemeDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4C0512A10F8B00050B6FD /* ThemeDefinitions.swift */; };
+		90D4C0542A10F8BB0050B6FD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4C0532A10F8BB0050B6FD /* ThemeManager.swift */; };
+		90D4C0562A10F9CE0050B6FD /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4C0552A10F9CE0050B6FD /* DataSource.swift */; };
 		90D4E02C29FD08D90072F00E /* Short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E02B29FD08D90072F00E /* Short.mp3 */; };
 		90D4E03029FD14EC0072F00E /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E02F29FD14EC0072F00E /* Rain.mp3 */; };
 		90D4E03429FD15D40072F00E /* Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E03329FD15D40072F00E /* Fire.mp3 */; };
 		90D4E03629FD16890072F00E /* WindChimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E03529FD16890072F00E /* WindChimes.mp3 */; };
 		90D4E03829FD17940072F00E /* ZenGong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4E03729FD17940072F00E /* ZenGong.mp3 */; };
+		90F6C0772A151EF700855495 /* SplitViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6C0762A151EF700855495 /* SplitViewTest.swift */; };
+		90F6C07C2A1543BF00855495 /* IconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6C07B2A1543BF00855495 /* IconManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +70,8 @@
 		904B37B029F55B3400044372 /* Thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Thunder.mp3; sourceTree = "<group>"; };
 		904B37B229F55B4200044372 /* Beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beach.mp3; sourceTree = "<group>"; };
 		904B37B429F55BEB00044372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		905D25002A13ED5500CE72B5 /* MedievalSharp-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MedievalSharp-Regular.ttf"; sourceTree = "<group>"; };
+		905D25022A13F03C00CE72B5 /* Parchment.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Parchment.ttf; sourceTree = "<group>"; };
 		906847F32A0BDDC10005ECDC /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		906847F52A0BE06B0005ECDC /* NatureButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureButtonView.swift; sourceTree = "<group>"; };
 		90B9A1642A0D6C4A00CF5350 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -71,11 +84,20 @@
 		90B9A1722A0E8FDA00CF5350 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
 		90B9A1742A0E8FF800CF5350 /* Shareview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shareview.swift; sourceTree = "<group>"; };
 		90B9A1762A0E900600CF5350 /* Privacyview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacyview.swift; sourceTree = "<group>"; };
+		90B9A1782A0FC76F00CF5350 /* Keyboard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Keyboard.mp3; sourceTree = "<group>"; };
+		90B9A17A2A0FC77D00CF5350 /* Typewriter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Typewriter.mp3; sourceTree = "<group>"; };
+		90D4C04C2A10F8800050B6FD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		90D4C04F2A10F89C0050B6FD /* ThemeColours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColours.xcassets; sourceTree = "<group>"; };
+		90D4C0512A10F8B00050B6FD /* ThemeDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDefinitions.swift; sourceTree = "<group>"; };
+		90D4C0532A10F8BB0050B6FD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		90D4C0552A10F9CE0050B6FD /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		90D4E02B29FD08D90072F00E /* Short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Short.mp3; sourceTree = "<group>"; };
 		90D4E02F29FD14EC0072F00E /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain.mp3; sourceTree = "<group>"; };
 		90D4E03329FD15D40072F00E /* Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire.mp3; sourceTree = "<group>"; };
 		90D4E03529FD16890072F00E /* WindChimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WindChimes.mp3; sourceTree = "<group>"; };
 		90D4E03729FD17940072F00E /* ZenGong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZenGong.mp3; sourceTree = "<group>"; };
+		90F6C0762A151EF700855495 /* SplitViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewTest.swift; sourceTree = "<group>"; };
+		90F6C07B2A1543BF00855495 /* IconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +111,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		900D24342A1614ED002C304C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		900D24352A1614F3002C304C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		900D24362A1614FA002C304C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				904B379029F5595200044372 /* SoundViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		900D24372A16150B002C304C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		904B377629F5592B00044372 = {
 			isa = PBXGroup;
 			children = (
@@ -108,14 +159,21 @@
 		904B378129F5592B00044372 /* SleepMusic */ = {
 			isa = PBXGroup;
 			children = (
-				904B37B429F55BEB00044372 /* Info.plist */,
 				904B378229F5592B00044372 /* SleepMusicApp.swift */,
+				904B37B429F55BEB00044372 /* Info.plist */,
+				900D24362A1614FA002C304C /* ViewModels */,
+				900D24372A16150B002C304C /* Managers */,
+				900D24352A1614F3002C304C /* Helpers */,
+				900D24342A1614ED002C304C /* Models */,
+				90D4C0552A10F9CE0050B6FD /* DataSource.swift */,
 				904B379A29F559E200044372 /* View */,
-				904B379029F5595200044372 /* SoundViewModel.swift */,
 				904B379429F5598F00044372 /* AudioManager.swift */,
 				904B379629F559A200044372 /* TimerManager.swift */,
-				904B378629F5592D00044372 /* Assets.xcassets */,
+				90F6C07B2A1543BF00855495 /* IconManager.swift */,
+				90D4C04E2A10F8830050B6FD /* Themes */,
 				904B37AD29F55B1A00044372 /* Sounds */,
+				905D24FF2A13ED3C00CE72B5 /* Fonts */,
+				904B378629F5592D00044372 /* Assets.xcassets */,
 				904B378829F5592D00044372 /* Preview Content */,
 			);
 			path = SleepMusic;
@@ -134,6 +192,7 @@
 			children = (
 				904B378429F5592B00044372 /* ContentView.swift */,
 				906847F32A0BDDC10005ECDC /* TestView.swift */,
+				90F6C0762A151EF700855495 /* SplitViewTest.swift */,
 				904B37A529F55A2400044372 /* ButtonsView.swift */,
 				906847F52A0BE06B0005ECDC /* NatureButtonView.swift */,
 				904B37A729F55A3000044372 /* PlayerView.swift */,
@@ -164,9 +223,31 @@
 				90D4E03529FD16890072F00E /* WindChimes.mp3 */,
 				90D4E03729FD17940072F00E /* ZenGong.mp3 */,
 				90011E0B2A0C0AA600BABE6B /* Underwater.mp3 */,
+				90B9A1782A0FC76F00CF5350 /* Keyboard.mp3 */,
+				90B9A17A2A0FC77D00CF5350 /* Typewriter.mp3 */,
 				90D4E02B29FD08D90072F00E /* Short.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		905D24FF2A13ED3C00CE72B5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				905D25022A13F03C00CE72B5 /* Parchment.ttf */,
+				905D25002A13ED5500CE72B5 /* MedievalSharp-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		90D4C04E2A10F8830050B6FD /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				90D4C04F2A10F89C0050B6FD /* ThemeColours.xcassets */,
+				90D4C04C2A10F8800050B6FD /* Theme.swift */,
+				90D4C0512A10F8B00050B6FD /* ThemeDefinitions.swift */,
+				90D4C0532A10F8BB0050B6FD /* ThemeManager.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +315,15 @@
 				904B37B329F55B4200044372 /* Beach.mp3 in Resources */,
 				904B378729F5592D00044372 /* Assets.xcassets in Resources */,
 				904B37AA29F55B0C00044372 /* Meditation.mp3 in Resources */,
+				905D25012A13ED5500CE72B5 /* MedievalSharp-Regular.ttf in Resources */,
 				90D4E03429FD15D40072F00E /* Fire.mp3 in Resources */,
 				90D4E03629FD16890072F00E /* WindChimes.mp3 in Resources */,
+				90D4C0502A10F89C0050B6FD /* ThemeColours.xcassets in Resources */,
+				905D25032A13F03C00CE72B5 /* Parchment.ttf in Resources */,
 				90D4E02C29FD08D90072F00E /* Short.mp3 in Resources */,
 				90D4E03829FD17940072F00E /* ZenGong.mp3 in Resources */,
+				90B9A1792A0FC76F00CF5350 /* Keyboard.mp3 in Resources */,
+				90B9A17B2A0FC77D00CF5350 /* Typewriter.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +341,8 @@
 				90B9A16B2A0E87F600CF5350 /* AnalyticsView.swift in Sources */,
 				904B379329F5596C00044372 /* PlaybackControlButton.swift in Sources */,
 				90B9A1672A0D768700CF5350 /* AboutView.swift in Sources */,
+				90D4C0522A10F8B00050B6FD /* ThemeDefinitions.swift in Sources */,
+				90D4C04D2A10F8800050B6FD /* Theme.swift in Sources */,
 				90B9A1732A0E8FDA00CF5350 /* AppIconView.swift in Sources */,
 				904B379729F559A200044372 /* TimerManager.swift in Sources */,
 				904B37A829F55A3000044372 /* PlayerView.swift in Sources */,
@@ -263,12 +351,16 @@
 				90B9A1752A0E8FF800CF5350 /* Shareview.swift in Sources */,
 				90B9A16F2A0E8FB300CF5350 /* ContactView.swift in Sources */,
 				90B9A16D2A0E880900CF5350 /* ExperimentalView.swift in Sources */,
+				90D4C0542A10F8BB0050B6FD /* ThemeManager.swift in Sources */,
 				904B379529F5598F00044372 /* AudioManager.swift in Sources */,
 				904B378329F5592B00044372 /* SleepMusicApp.swift in Sources */,
 				90B9A1772A0E900600CF5350 /* Privacyview.swift in Sources */,
 				90B9A1652A0D6C4A00CF5350 /* SettingsView.swift in Sources */,
 				906847F62A0BE06C0005ECDC /* NatureButtonView.swift in Sources */,
+				90F6C0772A151EF700855495 /* SplitViewTest.swift in Sources */,
+				90D4C0562A10F9CE0050B6FD /* DataSource.swift in Sources */,
 				90011E2A2A0D36A900BABE6B /* AirplayView.swift in Sources */,
+				90F6C07C2A1543BF00855495 /* IconManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,8 +484,9 @@
 		904B378E29F5592D00044372 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Theme;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepMusic/Preview Content\"";
@@ -408,6 +501,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,15 +515,17 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		904B378F29F5592D00044372 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Theme;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = "AppIcon-Dark";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepMusic/Preview Content\"";
@@ -444,6 +540,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +554,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

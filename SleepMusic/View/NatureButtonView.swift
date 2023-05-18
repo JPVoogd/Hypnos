@@ -12,23 +12,35 @@ struct NatureButtonView: View {
     @State private var showPlayer = false
     
     var body: some View {
-            Button {
-                showPlayer = true
-            } label: {
-                Label("", systemImage: "play.fill")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding(.vertical, 10)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: UIScreen.main.bounds.height / 4)
-                    .background(Image(Sounds.meditation[index].smallImage)
-                        .resizable()
-                        .scaledToFill())
-                    .cornerRadius(20)
-            }
-            .fullScreenCover(isPresented: $showPlayer) {
-                PlayerView(index: index)
-            }
+
+        Button {
+            showPlayer = true
+        } label: {
+            Image(Sounds.nature[index].smallImage)
+                .resizable()
+                .scaledToFill()
+                .frame(maxWidth: .infinity)
+                .frame(height: UIScreen.main.bounds.height / 4)
+                .cornerRadius(20)
+                .overlay(
+                    Text(Sounds.nature[index].title)
+                        .font(Font.custom("MedievalSharp", size: 75))
+                        .foregroundColor(.white)
+                        .shadow(color: .black, radius: 5)
+                )
+            //            Text(Sounds.nature[index].title)
+            //                .font(.largeTitle)
+            //                .foregroundColor(.white)
+            //                .frame(maxWidth: .infinity)
+            //                .frame(height: UIScreen.main.bounds.height / 4)
+            //                .background(Image(Sounds.nature[index].smallImage)
+            //                    .resizable()
+            //                    .scaledToFill())
+            //                .cornerRadius(20)
+        }
+        .fullScreenCover(isPresented: $showPlayer) {
+            PlayerView(index: index)
+        }
     }
 }
 

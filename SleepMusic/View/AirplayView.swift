@@ -22,12 +22,12 @@ struct AirplayView_Previews: PreviewProvider {
 }
 
 struct AirPlayView: UIViewRepresentable {
-
+    @EnvironmentObject var dataSource: DataSource
     func makeUIView(context: Context) -> UIView {
 
         let routePickerView = AVRoutePickerView()
         routePickerView.backgroundColor = UIColor.clear
-        routePickerView.activeTintColor = UIColor.systemPurple
+        routePickerView.activeTintColor = dataSource.selectedTheme.textColor
         routePickerView.tintColor = UIColor.white
 
         return routePickerView

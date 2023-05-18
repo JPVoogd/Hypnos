@@ -11,6 +11,7 @@ struct PlayerView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var audioManager: AudioManager
     @StateObject private var timerModel = TimerModel()
+    @EnvironmentObject var dataSource: DataSource
     @State private var showDetails = false
     let index: Int
 
@@ -78,7 +79,7 @@ struct PlayerView: View {
                     Spacer()
 
                     //MARK: Timer Button
-                    let timerColor: Color = timerModel.isActive ? .purple : .white
+                    let timerColor: Color = timerModel.isActive ? dataSource.selectedTheme.accentColor : .white
                     PlaybackControlButton(systemName: "timer", color: timerColor) {
                         showDetails.toggle()
                     }
@@ -123,5 +124,6 @@ struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView(index: 0)
             .environmentObject(AudioManager())
+            .environmentObject(DataSource())
     }
 }
