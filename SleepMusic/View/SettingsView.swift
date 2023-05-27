@@ -8,7 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @EnvironmentObject var dataSource: DataSource
+    @EnvironmentObject var dataSource: ThemeModel
+    @Environment(\.openURL) var openURL
+
+    func mailto(_ email: String, _ subject: String) {
+        let mailto = "mailto:\(email)?subject=\(subject)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        print(mailto ?? "")
+        if let url = URL(string: mailto!) {
+            openURL(url)
+        }
+    }
+
     var body: some View {
         VStack {
             List {
@@ -23,56 +33,86 @@ struct SettingsView: View {
                     Text("Appearance")
                 }
 
-
                 Section {
-                    NavigationLink(destination: AnalyticsView()) {
-                        Label("Analytics", systemImage: "bookmark")
-                    }
-                    NavigationLink(destination: ExperimentalView()) {
-                        Label("Experimental", systemImage: "testtube.2")
-                    }
-                } header: {
-                    Text("Advanced")
-                }
 
 
-                Section {
-                    NavigationLink(destination: ContactView()) {
-                        Label("Support Guide", systemImage: "questionmark.bubble.fill")
+                    ShareLink(item: URL(string: "https://www.jpvoogd.nl")!) {
+                        Label {
+                            Text("Share Tranquil")
+                                .foregroundColor(.white)
+                            Spacer()
+                                Image(systemName: "arrow.up.forward")
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray)
+                        } icon: {
+                            Image(systemName: "square.and.arrow.up")
+                        }
                     }
-                    NavigationLink(destination: ContactView()) {
-                        Label("Contact", systemImage: "bubble.left.fill")
+
+                    Button {
+                        //Action
+                    } label: {
+                        Label {
+                            Text("Rate in App store")
+                                .foregroundColor(.white)
+                            Spacer()
+                                Image(systemName: "arrow.up.forward")
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray)
+                        } icon: {
+                            Image(systemName: "star.bubble")
+                        }
                     }
-                    NavigationLink(destination: AppRateView()) {
-                        Label("Rate in App Store", systemImage: "star.bubble.fill")
+
+                    Button {
+                        mailto("jpvoogd@icloud.com", "Support Tranquil")
+                    } label: {
+                        Label {
+                            Text("Contact")
+                                .foregroundColor(.white)
+                            Spacer()
+                                Image(systemName: "arrow.up.forward")
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray)
+                        } icon: {
+                            Image(systemName: "envelope")
+                        }
                     }
-                    NavigationLink(destination: Shareview()) {
-                        Label("Share Tranquil", systemImage: "square.and.arrow.up")
-                    }
+
                     NavigationLink(destination: Privacyview()) {
-                        Label("Privacy Policy", systemImage: "doc.plaintext.fill")
+                        Label("Privacy Policy", systemImage: "doc.plaintext")
                     }
+
+                    Button {
+                        openURL(URL(string: "https://www.jpvoogd.nl")!)
+                    } label: {
+                        Label {
+                            Text("Website")
+                                .foregroundColor(.white)
+                            Spacer()
+                                Image(systemName: "arrow.up.forward")
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray)
+                        } icon: {
+                            Image(systemName: "safari")
+                        }
+                    }
+
                     NavigationLink(destination: AboutView()) {
                         Label("About", systemImage: "person.crop.circle")
                     }
-                    NavigationLink(destination: SplitViewTest()) {
-                        Label("Splitview", systemImage: "person.crop.circle")
-                    }
-                    NavigationLink(destination: TestView()) {
-                        Label("TestView", systemImage: "person.crop.circle")
-                    }
+
                 } header: {
                     Text("Support")
                 }
             } .listStyle(InsetGroupedListStyle())
         }
-
     }
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-            .environmentObject(DataSource())
+            .environmentObject(ThemeModel())
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class DataSource: ObservableObject {
+class ThemeModel: ObservableObject {
     @AppStorage("selectedTheme") var selectedThemeAS = 1 {
         didSet {
             updateTheme()
@@ -19,9 +19,9 @@ class DataSource: ObservableObject {
         updateTheme()
     }
 
-    @Published var selectedTheme: Theme = Theme3()
+    @Published var selectedTheme: AccentColor = AccentColor.accentColor[0]
 
     func updateTheme() {
-        selectedTheme = ThemeManager.getTheme(selectedThemeAS)
+        selectedTheme = AccentColor.accentColor[selectedThemeAS]
     }
 }

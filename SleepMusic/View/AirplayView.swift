@@ -22,7 +22,7 @@ struct AirplayView_Previews: PreviewProvider {
 }
 
 struct AirPlayView: UIViewRepresentable {
-    @EnvironmentObject var dataSource: DataSource
+    @EnvironmentObject var dataSource: ThemeModel
     func makeUIView(context: Context) -> UIView {
 
         let routePickerView = AVRoutePickerView()

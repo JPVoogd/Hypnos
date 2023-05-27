@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showingSettings = false
-    @EnvironmentObject var dataSource: DataSource
+    @EnvironmentObject var theme: ThemeModel
 
     var body: some View {
         NavigationStack {
@@ -30,7 +30,7 @@ struct ContentView: View {
                         showingSettings = true
                     }) {
                         Text(Image(systemName: "gearshape"))
-                            .accentColor(dataSource.selectedTheme.accentColor)
+                            .accentColor(theme.selectedTheme.accentColor)
                     }
                     .sheet(isPresented: $showingSettings) {
                         NavigationView {
@@ -46,7 +46,7 @@ struct ContentView: View {
                                 }
                                 .navigationTitle("Settings")
                         }
-                        .accentColor(dataSource.selectedTheme.accentColor)
+                        .accentColor(theme.selectedTheme.accentColor)
                     }
                 }
             }
@@ -58,6 +58,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(AudioManager())
-            .environmentObject(DataSource())
+            .environmentObject(ThemeModel())
     }
 }

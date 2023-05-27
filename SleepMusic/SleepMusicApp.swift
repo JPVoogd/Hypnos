@@ -39,7 +39,7 @@ struct SleepMusicApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(AudioManager())
-                .environmentObject(DataSource())
+                .environmentObject(ThemeModel())
         }
     }
 }

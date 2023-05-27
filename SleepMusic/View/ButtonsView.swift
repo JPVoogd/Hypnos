@@ -28,15 +28,6 @@ struct ButtonsView: View {
                             .foregroundColor(.white)
                             .shadow(color: .black, radius: 10)
                     )
-//                Text(Sounds.sounds[index].title)
-//                    .font(Font.custom("MedievalSharp-Regular", size: 50))
-//                    .foregroundColor(.white)
-//                    .frame(maxWidth: .infinity)
-//                    .frame(height: UIScreen.main.bounds.height / 4)
-//                    .background(Image(Sounds.sounds[index].smallImage)
-//                        .resizable()
-//                        .scaledToFill())
-//                    .cornerRadius(20)
             }
         .fullScreenCover(isPresented: $showPlayer) {
             PlayerView(index: index)
