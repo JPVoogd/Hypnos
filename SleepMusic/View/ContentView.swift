@@ -21,7 +21,7 @@ struct ContentView: View {
                     .padding(20)
                 }
             }
-            .navigationTitle("Tranquil")
+            .navigationTitle("Hypnos")
             .navigationBarTitleDisplayMode(.automatic)
             .background(Color(red: 24/255, green: 23/255, blue: 22/255))
             .toolbar {

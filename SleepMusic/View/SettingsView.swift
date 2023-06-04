@@ -38,7 +38,7 @@ struct SettingsView: View {
 
                     ShareLink(item: URL(string: "https://www.jpvoogd.nl")!) {
                         Label {
-                            Text("Share Tranquil")
+                            Text("Share Hypnos")
                                 .foregroundColor(.white)
                             Spacer()
                                 Image(systemName: "arrow.up.forward")
@@ -65,7 +65,7 @@ struct SettingsView: View {
                     }
 
                     Button {
-                        mailto("jpvoogd@icloud.com", "Support Tranquil")
+                        mailto("jpvoogd@icloud.com", "Support Hypnos")
                     } label: {
                         Label {
                             Text("Contact")

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class ThemeModel: ObservableObject {
-    @AppStorage("selectedTheme") var selectedThemeAS = 1 {
+    @AppStorage("selectedTheme") var selectedThemeAS = 9 {
         didSet {
             updateTheme()
         }
