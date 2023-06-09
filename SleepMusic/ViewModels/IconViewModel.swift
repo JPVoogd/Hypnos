@@ -24,6 +24,11 @@ final class ChangeAppIconViewModel: ObservableObject {
 
     enum AppIcon: String, CaseIterable, Identifiable {
         case primary = "AppIcon"
+        case blue = "AppIcon-Blue"
+        case darkBlue = "AppIcon-DBlue"
+        case green = "AppIcon-Green"
+        case yellow = "AppIcon-Yellow"
+        case red = "AppIcon-Red"
 
         var id: String { rawValue }
         var iconName: String? {
@@ -31,8 +36,16 @@ final class ChangeAppIconViewModel: ObservableObject {
                 case .primary:
                     /// `nil` is used to reset the app icon back to its primary icon.
                     return nil
-                default:
-                    return rawValue
+                case .blue:
+                    return "AppIcon-Blue"
+                case .darkBlue:
+                    return "AppIcon-DBlue"
+                case .green:
+                    return "AppIcon-Green"
+                case .yellow:
+                    return "AppIcon-Yellow"
+                case .red:
+                    return "AppIcon-Red"
             }
         }
 
@@ -40,6 +53,16 @@ final class ChangeAppIconViewModel: ObservableObject {
             switch self {
                 case .primary:
                     return "Default"
+                case .blue:
+                    return "Blue"
+                case .darkBlue:
+                    return "Dark Blue"
+                case .green:
+                    return "Green"
+                case .yellow:
+                    return "Yellow"
+                case .red:
+                    return "Red"
             }
         }
 

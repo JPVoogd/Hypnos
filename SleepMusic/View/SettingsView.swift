@@ -64,6 +64,10 @@ struct SettingsView: View {
                         }
                     }
 
+                    NavigationLink(destination: TipView()) {
+                        Label("Tip Jar", systemImage: "hands.clap")
+                    }
+
                     Button {
                         mailto("jpvoogd@icloud.com", "Support Hypnos")
                     } label: {

@@ -11,6 +11,7 @@ import SwiftUI
 struct SleepMusicApp: App {
     @StateObject var audioManager = AudioManager()
     @StateObject var viewModel = ChangeAppIconViewModel()
+    @StateObject var store = Store()
 
     init(){
         //set nav bar style
@@ -40,6 +41,7 @@ struct SleepMusicApp: App {
             ContentView()
                 .environmentObject(AudioManager())
                 .environmentObject(ThemeModel())
+                .environmentObject(store)
         }
     }
 }
