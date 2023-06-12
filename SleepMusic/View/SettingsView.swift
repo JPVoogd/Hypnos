@@ -36,7 +36,7 @@ struct SettingsView: View {
                 Section {
 
 
-                    ShareLink(item: URL(string: "https://www.jpvoogd.nl")!) {
+                    ShareLink(item: URL(string: "https://apps.apple.com/us/app/hypnos-relax-and-sleep/id6449865547")!) {
                         Label {
                             Text("Share Hypnos")
                                 .foregroundColor(.white)
@@ -50,7 +50,7 @@ struct SettingsView: View {
                     }
 
                     Button {
-                        //Action
+                        openURL(URL(string: "https://apps.apple.com/us/app/hypnos-relax-and-sleep/id6449865547")!)
                     } label: {
                         Label {
                             Text("Rate in App store")
