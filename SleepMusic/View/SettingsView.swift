@@ -35,7 +35,6 @@ struct SettingsView: View {
 
                 Section {
 
-
                     ShareLink(item: URL(string: "https://apps.apple.com/us/app/hypnos-relax-and-sleep/id6449865547")!) {
                         Label {
                             Text("Share Hypnos")

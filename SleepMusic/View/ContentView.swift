@@ -16,6 +16,31 @@ struct ContentView: View {
             VStack {
                 ScrollView(showsIndicators: false) {
                     ForEach(0 ..< Sounds.sounds.count, id: \.self) { index in
+                        if index == 0 {
+                            Text("Meditation Sounds")
+                                .font(Font.custom("MedievalSharp", size: 35))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.bottom, -10)
+                                .padding(.top, 10)
+                        } else if index == 3 {
+                            Text("Nature Sounds")
+                                .font(Font.custom("MedievalSharp", size: 35))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.bottom, -10)
+                                .padding(.top, 10)
+                        } else if index == 10 {
+                            Text("Baby Sounds")
+                                .font(Font.custom("MedievalSharp", size: 35))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.bottom, -10)
+                                .padding(.top, 10)
+                        } else if index == 12 {
+                            Text("Urban Sounds")
+                                .font(Font.custom("MedievalSharp", size: 35))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.bottom, -10)
+                                .padding(.top, 10)
+                        }
                         ButtonsView(index: index)
                     }
                     .padding(20)
